@@ -7,28 +7,64 @@ import Login from "../Login/Login";
 const LandingPage = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className="bg-[#D2CABF] min-h-screen w-full flex items-center justify-center">
-      <div className="text-black font-mono text-balance flex justify-center items-center w-[75%] h-full">
-        <div className="flex flex-col items-center justify-around w-1/2 h-full">
-          <p className="lg:text-4xl md:text-3xl font-light mb-10 w-5/6">
-            ¿Eres agricultor en Perú? Mantente un paso adelante con nuestro
-            seguimiento climático en tiempo real, alertas personalizadas y
-            recomendaciones agrícolas específicas. Con Tierratec, podrás
-            gestionar los riesgos meteorológicos y mejorar la eficiencia de tu
-            cosecha.
-          </p>
-          <button
-            className="mt-2 bg-green-600 text-white text-2xl w-56 h-12 text-center rounded-3xl transition duration-300 ease-in-out transform hover:scale-105"
-            onClick={() => setShowModal(true)}
-          >
-            Empezar
-          </button>
+    <div className="flex flex-col items-center justify-center">
+      <div className="min-h-screen bg-[#EEEEE2]  rounded-lg shadow-lg w-full max-w-9xl flex flex-col md:flex-row overflow-hidden">
+        <div className="md:w-full p-8 flex flex-col justify-evenly">
+          <div className="m-4">
+            <h1 className="text-6xl font-bold text-gray-800 mb-8">EcoCycle</h1>
+            <p className="text-3xl text-gray-600">
+              Utiliza nuestra app hoy y sé parte del cambio hacia una ciudad más
+              limpia y sostenible. Con EcoGestión Urbana, juntos podemos reducir
+              los residuos urbanos y proteger nuestro medio ambiente. ¡Comienza
+              a hacer la diferencia ahora!
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            <div className="bg-[#fce7cb] rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-4 border-[#00C889] transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+              <h2 className="text-2xl font-bold text-[#006B27] mb-2">
+                Optimización de Recolección
+              </h2>
+              <p className="text-gray-600 font-serif">
+                Nuestra app optimiza las rutas de recolección de residuos para
+                reducir el tiempo y el costo, mejorando la eficiencia de los
+                servicios de limpieza urbana.
+              </p>
+            </div>
+            <div className="bg-[#fce7cb] rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-4 border-[#00C889]  transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+              <h2 className="text-2xl font-bold text-[#006B27] mb-2">
+                Reciclaje Eficiente
+              </h2>
+              <p className="text-gray-600 font-serif">
+                Facilitamos el reciclaje proporcionando información y recursos
+                para separar correctamente los residuos, promoviendo una cultura
+                de sostenibilidad.
+              </p>
+            </div>
+            <div className="bg-[#fce7cb] rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-4 border-[#00C889]  transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+              <h2 className="text-2xl font-bold text-[#006B27] mb-2">
+                Compromiso Comunitario
+              </h2>
+              <p className="text-gray-600 font-serif">
+                Fomentamos la participación comunitaria mediante campañas
+                educativas y eventos para crear conciencia sobre la importancia
+                de la gestión de residuos.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <button
+              className="bg-[#00C889] text-white text-lg font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105"
+              onClick={() => setShowModal(true)}
+            >
+              Empezar
+            </button>
+          </div>
         </div>
-        <div className="flex items-center justify-center w-1/2 ">
+        <div className="md:w-2/3 flex flex-col items-center justify-center p-8 bg-green-600 relative">
           <img
-            src="/images/agricultura.png"
-            alt="Imagen Arbol"
-            className="h-[70%] w-[70%] transition duration-300 ease-in-out transform hover:scale-110 "
+            src="/images/reciclaje2.jpg"
+            alt="Imagen de reciclaje"
+            className="absolute inset-0 w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>

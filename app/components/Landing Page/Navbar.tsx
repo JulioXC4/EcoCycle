@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Login from "../Login/Login";
 import { usePathname } from "next/navigation";
@@ -9,23 +9,25 @@ const Navbar = () => {
   const pathname = usePathname();
   const [showModal, setShowModal] = useState(false);
   return (
-    <nav className="fixed bg-green-600 w-full h-24 flex justify-around items-center shadow-md z-20">
+    <nav className=" bg-[#e0e0d8] w-full h-24 flex justify-around items-center shadow-md z-20">
       <div className="w-1/3flex items-center">
-        <Link className="text-black text-xl font-bold" href="/">
-          <img
-            src="/images/logo.png"
-            alt="Logo TierraTec"
-            className="h-20 w-20 rounded-full object-cover transition-transform transform hover:scale-105"
-          />
+        <Link className="text-xl font-bold" href="/">
+          <div className="h-16 w-44">
+            <img
+              src="/images/ecocycle.webp"
+              alt="Logo Ecocycle"
+              className="h-full w-full object-contain transition-transform transform hover:scale-105"
+            />
+          </div>
         </Link>
       </div>
       <div className="w-2/3 flex justify-end items-center">
         <div className="flex justify-evenly items-center w-5/6">
           <Link
             href="/"
-            className={`py-2 rounded-3xl text-center text-3xl hover:text-white w-0 hover:w-6 transition-all duration-500 ${
+            className={`py-2 rounded-3xl text-center text-3xl hover:text-black w-0 hover:w-6 transition-all duration-500 ${
               pathname === "/"
-                ? "text-white py-2 rounded-3xl text-center text-3xl"
+                ? "text-[#006B27] py-2 rounded-3xl text-center text-3xl"
                 : "text-black"
             }`}
           >
@@ -33,16 +35,16 @@ const Navbar = () => {
           </Link>
           <Link
             href="/about"
-            className={`py-2 rounded-3xl text-center text-3xl hover:text-white w-0 hover:w-6 transition-all duration-500 ${
+            className={`py-2 rounded-3xl text-center text-3xl hover:text-black w-0 hover:w-6 transition-all duration-500 ${
               pathname === "/about"
-                ? "text-white py-2 rounded-3xl text-center text-3xl"
+                ? "text-[#006B27] py-2 rounded-3xl text-center text-3xl"
                 : "text-black"
             }`}
           >
             Objetivo
           </Link>
           <button
-            className="py-2 px-4 rounded text-center text-3xl bg-blue-600 text-white "
+            className="py-2 px-4 rounded text-center text-3xl bg-[#00C889] text-white "
             onClick={() => setShowModal(true)}
           >
             Login

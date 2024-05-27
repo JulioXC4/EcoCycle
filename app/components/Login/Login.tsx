@@ -6,11 +6,13 @@ const Login = ({ setShowModal }: any) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
       <div className="bg-white rounded-lg p-8 max-w-sm w-full h-auto sm:h-[55vh] flex flex-col justify-center items-center">
-        <img
-          src="/images/logo.png"
-          alt="Logo TierraTec"
-          className="h-20 w-20 rounded-full object-cover transition-transform transform hover:scale-105 m-4"
-        />
+        <div className="h-16 w-44">
+          <img
+            src="/images/ecocycle.webp"
+            alt="Logo Ecocycle"
+            className="h-full w-full object-contain transition-transform transform hover:scale-105"
+          />
+        </div>
         <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         <form>
           <div className="mb-4">

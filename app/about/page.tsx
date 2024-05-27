@@ -6,28 +6,29 @@ const About = () => {
   return (
     <div className="w-full h-full">
       <Navbar />
-      <div className="bg-[#D2CABF] min-h-screen w-full flex items-center justify-center">
-        <div className="text-black font-mono text-balance flex justify-center items-center w-[75%] h-full">
-          <div className="flex flex-col items-center justify-around w-1/2 h-full">
-            <h1 className="lg:text-3xl md:text-2xl font-light mb-10 w-5/6">
-              Nuestro objetivo
+      <div className="bg-[#EEEEE2] min-h-screen w-full flex items-center justify-center p-8">
+        <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row w-full max-w-5xl overflow-hidden">
+          <div className="md:w-1/2 flex flex-col items-center justify-center p-8">
+            <h1 className="text-4xl font-bold text-green-800 mb-6">
+              Nuestro Objetivo
             </h1>
-            <p className="lg:text-2xl md:text-2xl font-light mb-10 w-5/6">
-              En Tierratec, nuestro objetivo es empoderar a los agricultores del
-              Perú con herramientas avanzadas y fáciles de usar para el
-              seguimiento del clima y la gestión de riesgos meteorológicos. Nos
-              comprometemos a proporcionar información precisa y actualizada
-              sobre las condiciones climáticas, alertas personalizadas y
-              recomendaciones agrícolas específicas, ayudando a los agricultores
-              a proteger sus cultivos, maximizar su rendimiento y promover
-              prácticas agrícolas más sostenibles y resilientes.
+            <p className="text-lg text-gray-700 leading-relaxed">
+              En EcoCycle, nos dedicamos a proporcionar soluciones innovadoras y
+              sostenibles para la gestión integral de residuos urbanos. Nuestro
+              enfoque se centra en desarrollar tecnologías y estrategias que
+              optimicen la recolección, el reciclaje y la eliminación adecuada
+              de residuos, con el objetivo de reducir el impacto ambiental y
+              mejorar la calidad de vida en las ciudades. Con un equipo
+              comprometido con la innovación y el cuidado del medio ambiente,
+              estamos en constante búsqueda de soluciones que impulsen un cambio
+              positivo en nuestras comunidades urbanas.
             </p>
           </div>
-          <div className="flex items-center justify-center w-1/2 ">
+          <div className="md:w-1/2 flex items-center justify-center relative">
             <img
-              src="/images/agricultura.png"
-              alt="Imagen Arbol"
-              className="h-[70%] w-[70%] transition duration-300 ease-in-out transform hover:scale-110"
+              src="/images/reciclaje.jpg"
+              alt="Imagen de reciclaje"
+              className="w-full h-full object-cover rounded-lg "
             />
           </div>
         </div>
