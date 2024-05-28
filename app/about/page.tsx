@@ -26,7 +26,7 @@ const About = () => {
           </div>
           <div className="md:w-1/2 flex items-center justify-center relative">
             <img
-              src="/images/reciclaje.jpg"
+              src="/images/reciclaje.webp"
               alt="Imagen de reciclaje"
               className="w-full h-full object-cover rounded-lg "
             />

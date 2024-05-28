@@ -62,7 +62,7 @@ const LandingPage = () => {
         </div>
         <div className="md:w-2/3 flex flex-col items-center justify-center p-8 bg-green-600 relative">
           <img
-            src="/images/reciclaje2.jpg"
+            src="/images/reciclaje2.webp"
             alt="Imagen de reciclaje"
             className="absolute inset-0 w-full h-full object-cover rounded-lg"
           />
